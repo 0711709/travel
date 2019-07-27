@@ -34,9 +34,9 @@
     position: absolute;
 }
 /* border
- * 因为边框是伪元素的边框
- * 所以需要对子级设置定位
- * 
+ * 因，边框是由伪元素区域遮盖在父级
+ * 故，子级若有交互，需要对子级设置
+ * 定位 及 z轴
  */
 .border::before {
     box-sizing: border-box;
