@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.imgUrl" alt="img" />
         <div class="item-info">
           <p class="item-title">{{ item.title }}</p>
@@ -17,29 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [
-        {
-          id: '001',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201212/31/309a88f591369b6893835fbb.png_200x200_d1b48ee6.png',
-          title: '广东科学中心',
-          desc: '15612条评论'
-        },
-        {
-          id: '002',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201212/31/309a88f591369b6893835fbb.png_200x200_d1b48ee6.png',
-          title: '广东科学中心',
-          desc: '15612条评论'
-        },
-        {
-          id: '003',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/201212/31/309a88f591369b6893835fbb.png_200x200_d1b48ee6.png',
-          title: '广东科学中心',
-          desc: '15612条评论'
-        }
-      ]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
