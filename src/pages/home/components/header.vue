@@ -9,7 +9,7 @@
     </div>
     <router-link to="/city">
       <div class="header-right">
-        {{ this.doubleCity0000000000000000000 }}
+        {{ this.doubleCity }}
         <span class="iconfont arrow-icon">&#xeb6d;</span>
       </div>
     </router-link>
